@@ -1,0 +1,25 @@
+import supabase from "./supabase";
+
+export const getSettings = async () => {
+  let { data, error } = await supabase.from("settings").select("*").single();
+
+  if (error) {
+    console.log(error);
+    throw new error("Settings could not be loaded");
+  }
+  return data;
+};
+
+export const updateSettings = async (newSetting) => {
+  let { data, error } = await supabase
+    .from("settings")
+    .update(newSetting)
+    .eq("id", 1)
+    .single();
+
+  if (error) {
+    console.log(error);
+    throw new error("Settings could not be updated");
+  }
+  return data;
+};
