@@ -9,7 +9,7 @@ import { MdLogin, MdLogout } from "react-icons/md";
 import { useUpdateCheckout } from "./useUpdateCheckout";
 import Loader from "../../ui/Loader";
 import { FiTrash2 } from "react-icons/fi";
-import ConfirmDeleteBooking from "../../ui/confirmDeleteBooking";
+import ConfirmDeleteBooking from "../../ui/ConfirmDeleteBooking";
 
 const BookingRow = ({ booking }) => {
   const { isUpdating, updateCheckoutDetails } = useUpdateCheckout();
