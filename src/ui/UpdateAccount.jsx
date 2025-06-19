@@ -4,7 +4,7 @@ import BtnLoader from "./BtnLoader";
 import { useUpdateUser } from "../features/users/useUpdateUser";
 import Loader from "../ui/Loader";
 import { useUser } from "../features/authentication/useUser";
-import UpdatePassword from "./updatePassword";
+import UpdatePassword from "./UpdatePassword";
 
 const UpdateSettingForm = () => {
   const { isUpdating, updateUserMutate } = useUpdateUser();
