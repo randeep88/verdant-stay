@@ -40,7 +40,8 @@ const Login = () => {
             disabled={isLoggingIn}
             className="py-1 w-80 focus:outline-none px-2 border-2 border-gray-700 border-opacity-20 rounded-md"
             onChange={(e) => setEmail(e.target.value)}
-            value="verdant@gmail.com"
+            value={email}
+            placeholder="verdant@gmail.com"
             type="email"
             name="email"
             id="email"
@@ -52,7 +53,8 @@ const Login = () => {
             disabled={isLoggingIn}
             className="py-1 w-80 focus:outline-none px-2 border-2 border-gray-700 border-opacity-20 rounded-md"
             onChange={(e) => setPassword(e.target.value)}
-            value="verdant"
+            value={password}
+            placeholder="verdant"
             type="password"
             name="password"
             id="password"
